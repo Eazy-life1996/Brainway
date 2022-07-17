@@ -53,9 +53,8 @@
 .video__svg-2 {
   position: absolute;
   top: 94.5%;
-  left: 85.5%;
+  right: 5%;
   width: 92px;
-  overflow: hidden;
 }
 
 @media (min-width:$desktop-width) {
@@ -87,7 +86,7 @@
   .video__svg-2 {
     width: 134px;
     top: 96%;
-    left: 83%;
+    right: 10%;
   }
 
   .video__img--sound {
