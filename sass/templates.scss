@@ -10,3 +10,14 @@
     background: linear-gradient(90deg, #8939E0 0%, #68A0FD 100%);
   }
 }
+%mobile-text {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: $black;
+}
+%text-gradient {
+  background: linear-gradient(90deg, $purple 0%, $blue 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
