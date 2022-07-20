@@ -21,3 +21,28 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@mixin circle-blue {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #6A11CB 0%, #2575FC 100%);
+  opacity: 0.5;
+  transform: rotate(105deg);
+  position: absolute;
+}
+@mixin circle-red {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #C72A16 -0.01%, #BA2244 99.8%);
+  opacity: 0.5;
+  transform: rotate(105deg);
+  position: absolute;
+}
+@mixin circle-border {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  border: 5px solid #ffba3b;
+  position: absolute;
+}
