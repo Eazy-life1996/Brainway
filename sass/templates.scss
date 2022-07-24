@@ -39,6 +39,15 @@
   transform: rotate(105deg);
   position: absolute;
 }
+@mixin circle-gold {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #FFD328 0.29%, #FFA700 100.08%);
+  opacity: 0.5;
+  transform: rotate(105deg);
+  position: absolute;
+}
 @mixin circle-border {
   width: 98px;
   height: 98px;
