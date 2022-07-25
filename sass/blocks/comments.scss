@@ -1,0 +1,192 @@
+.comments {
+  padding-top: 60px;
+  padding-bottom: 90px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $bacground-grey;
+}
+
+.comments__main-title {
+  @extend %text-gradient;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+// Comments Card
+
+.comments__slider {
+  display: flex;
+  position: relative;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.comments__slider .slick-dots {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 45.5px);
+  margin-top: 30px;
+}
+
+.comments__slider .slick-dots li {
+  font-size: 0;
+  width: 9px;
+  height: 9px;
+  background-color: rgba($background-dotes, 0.5);
+  border-radius: 50%;
+  margin-right: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.comments__slider .slick-dots li.slick-active {
+  background: linear-gradient(90deg, $purple 0%, $blue 100%);
+}
+
+.comments__card {
+  width: 100%;
+  padding: 20px;
+  margin-right: 10px;
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.comments__user {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.comments__img {
+  width: 63px;
+  height: 63px;
+  margin-right: 12px;
+}
+
+.comments__name,
+.comments__company {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+}
+
+.comments__subtitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.comments__svg {
+  width: 22px;
+}
+
+.comments__title {
+  margin-left: 9px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: $black;
+}
+
+.comments__comment {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: $black;
+  margin-bottom: 20px;
+}
+
+.comments__link {
+  @extend %text-gradient;
+  width: 91px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+
+  &:hover {
+    background: $black;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &:active {
+    background: rgba($black, 0.5);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.comments__img-logo {
+  position: absolute;
+  right: 0%;
+  bottom: -2%;
+}
+
+@media (min-width:$desktop-width) {
+  .comments {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  .slick-track {
+    align-items: center;
+  }
+
+  .comments__card {
+    margin-right: 0;
+    height: 268px;
+    width: 415px;
+    background: linear-gradient(90deg, rgba(106, 17, 203, 0.2) 0%, rgba(37, 117, 252, 0.2) 100%);
+    opacity: 0.6;
+  }
+
+  .slick-center {
+    background: $white;
+    width: 600px;
+    height: 330px;
+    opacity: 1;
+  }
+
+  .slick-center .comments__svg {
+    width: 35px;
+  }
+
+  .slick-center .comments__title {
+    font-size: 20px;
+  }
+
+  .slick-center .comments__comment {
+    font-size: 17px;
+  }
+
+  .slick-center .comments__user {
+    margin-bottom: 35px;
+  }
+  
+  .none {
+    display: none;
+  }
+}
