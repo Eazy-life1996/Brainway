@@ -13,9 +13,8 @@ $(document).ready(function () {
         centerMode: true,
         variableWidth: true,
         slidesToScroll: 1,
-        adaptiveHeight: true,
-        centerPadding: '-15%',
-        initialSlide: 2
+        arrows: true,
+        cssEase: 'ease',
       }
     }]
   });

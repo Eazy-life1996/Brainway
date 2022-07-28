@@ -147,27 +147,102 @@
 
 @media (min-width:$desktop-width) {
   .comments {
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 85px;
+    padding-right: 85px;
   }
 
   .slick-track {
     align-items: center;
   }
 
-  .comments__card {
-    margin-right: 0;
-    height: 268px;
-    width: 415px;
-    background: linear-gradient(90deg, rgba(106, 17, 203, 0.2) 0%, rgba(37, 117, 252, 0.2) 100%);
-    opacity: 0.6;
+  .comments__slider {
+    padding-right: 5%;
+    padding-left: 5%;
   }
 
-  .slick-center {
+  .comments__card {
+    margin-right: 15px;
+    width: 1.66%;
+    z-index: 1;
+    padding-right: 60px;
+    padding-left: 35px;
+  }
+
+  .comments__title {
+    font-size: 14px;
+  }
+
+  .comments__comment {
+    font-size: 11px;
+  }
+
+  .comments__user {
+    align-items: center;
+  }
+
+  .comments__img {
+    width: 57px;
+    height: 57px;
+  }
+
+  .comments__name,
+  .comments__company {
+    font-size: 10px;
+  }
+
+  .comments__link {
+    font-size: 12px;
+  }
+
+  .comments__img-logo {
+    right: 6%;
+    top: 11%;
+    width: 80px;
+    height: 47px;
+  }
+
+  .comments__fill {
+    background: linear-gradient(90deg, rgba(106, 17, 203, 0.2) 0%, rgba(37, 117, 252, 0.2) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+  }
+
+  .comments__slider .slick-arrow {
+    font-size: 0;
+    position: absolute;
+  }
+
+  .comments__slider .slick-next {
+    background-image: url(../img/svg/slider-right.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 28px;
+    right: -1.2%;
+    top: 45%;
+  }
+
+  .comments__slider .slick-prev {
+    background-image: url(../img/svg/slider-left.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 28px;
+    left: -1.2%;
+    top: 45%;
+  }
+
+  .comments__slider .slick-center {
+    margin-right: -0.14%;
+    margin-left: -0.19%;
     background: $white;
-    width: 600px;
-    height: 330px;
-    opacity: 1;
+    width: 2.76%;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-top: 30px;
+    z-index: 15;
   }
 
   .slick-center .comments__svg {
@@ -185,7 +260,31 @@
   .slick-center .comments__user {
     margin-bottom: 35px;
   }
-  
+  .slick-center .comments__img {
+    width: 83px;
+    height: 83px;
+  }
+
+  .slick-center .comments__name,
+  .slick-center .comments__company {
+    font-size: 15px;
+  }
+
+  .slick-center .comments__link {
+    font-size: 17px;
+    width: 110px;
+  }
+
+  .slick-center .comments__img-logo {
+    width: 120px;
+    height: 80px;
+    top: 10%;
+    right: 4%;
+  }
+  .slick-center .comments__fill {
+    display: none;
+  }
+
   .none {
     display: none;
   }
