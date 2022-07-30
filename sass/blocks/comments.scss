@@ -4,6 +4,7 @@
   padding-left: 20px;
   padding-right: 20px;
   background-color: $bacground-grey;
+  position: relative;
 }
 
 .comments__main-title {
@@ -143,6 +144,26 @@
   position: absolute;
   right: 0%;
   bottom: -2%;
+}
+
+.comments__decoration {
+  position: absolute;
+}
+
+.comments__decoration--1 {
+  width: 80px;
+  right: 0;
+  top: -6%;
+}
+
+.comments__decoration--2 {
+  top: 6%;
+  left: 6%;
+  width: 18px;
+}
+
+.comments__decoration--3 {
+  display: none;
 }
 
 @media (min-width:$desktop-width) {
@@ -288,4 +309,20 @@
   .none {
     display: none;
   }
+.comments__decoration--1 {
+  width: 124px;
+  right: 7%;
+  top: -11.5%;
+}
+
+.comments__decoration--2 {
+  left: 16%;
+  top: 4%;
+}
+
+.comments__decoration--3 {
+  display: block;
+  top: -7%;
+  left: 9%;
+}
 }

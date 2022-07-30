@@ -19,3 +19,23 @@ $(document).ready(function () {
     }]
   });
 });
+$(document).ready(function () {
+  $('.clients__slider').slick({
+    mobileFirst: true,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 800,
+    responsive: [{
+      breakpoint: 1100,
+      settings: {
+        variableWidth: true,
+        slidesToScroll: 1,
+        cssEase: 'ease',
+      }
+    }]
+  });
+});
