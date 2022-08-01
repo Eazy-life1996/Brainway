@@ -438,6 +438,66 @@
         </div>
       </div>
     </section>
+    <section class="contact">
+      <h2 class="contact__title">
+        Contact us
+      </h2>
+      <div class="contact__block">
+        <form action="#" method="post" class="contact__form">
+          <input type="text" name="user-name" placeholder="Name" class="contact__input" required>
+          <input type="text" name="user-company" placeholder="Company" class="contact__input">
+          <input type="email" name="user-email" placeholder="Email" class="contact__input" required>
+          <input type="tel" name="user-tel" placeholder="Phone" class="contact__input" required>
+          <textarea name="user-message" placeholder="Whats on your mind?" cols="30" rows="8" class="contact__input"
+            required></textarea>
+          <p class="contact__p">
+            By clicking on the button, You agree with <a href="#" class="contact__policy">Privacy Policy</a>
+          </p>
+          <button class="contact__button" type="submit">
+            Send
+          </button>
+        </form>
+      </div>
+      <div class="contact__maps">
+        <h2 class="contact__title-black">
+          Offices
+        </h2>
+        <div class="contact__map-block contact__map-block-bg" data-map-change data-map-israel>
+          <button class="contact__map-link">
+            <p class="contact__country">
+              Israel
+            </p>
+            <p class="contact__addres">
+              Petah Tikva, 37 Amal St.
+            </p>
+            <a href="tel:972545331851" class="contact__tel">
+              <img class="contact__svg" src="img/svg/phone.svg" alt="Phone">
+              +(972)545-331-851
+            </a>
+          </button>
+        </div>
+        <div class="contact__map-block" data-map-change data-map-russia>
+          <button class="contact__map-link">
+            <p class="contact__country">
+              Russia
+            </p>
+            <p class="contact__addres">
+              St. Petersburg, 46 Garden St.
+            </p>
+            <a href="tel:972545331851" class="contact__tel">
+              <img class="contact__svg" src="img/svg/phone.svg" alt="Phone">
+              +(972)545-331-851
+            </a>
+          </button>
+        </div>
+        <div class="contact__map">
+          <iframe class="contact__map-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108159.52088532507!2d34.77889295563606!3d32.0966903256696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d49f0fcae7941%3A0x8a71713b50b96589!2zQW1hbCAzNywgUGV0YWggVGlrdmEsINCY0LfRgNCw0LjQu9GM!5e0!3m2!1sru!2skg!4v1659353906144!5m2!1sru!2skg"
+            width="600" height="450" style="border:0;" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" data-map></iframe>
+        </div>
+      </div>
+    </section>
   </main>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/slick.min.js"></script>

@@ -1,6 +1,9 @@
 'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
+
+  // Menu
+
   const mobileMenu = document.querySelector('[data-mobile-menu]'),
         btnOpen = document.querySelector('[data-open-menu]'),
         btnClose = document.querySelector('[data-close-menu]');
@@ -16,4 +19,11 @@ window.addEventListener('DOMContentLoaded', () => {
     btnClose.classList.remove('button-hide');
     btnOpen.classList.add('button-hide');
   });
+
+  // Map change 
+
+  const mapButtonIsrael = document.querySelector('[data-map-israel]'),
+        mapButtonRussia = document.querySelector('[data-map-russia]'),
+        mapButton = document.querySelector('[data-map-change]'),
+        map = document.querySelector('[data-map]');
 });
