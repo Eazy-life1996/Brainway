@@ -118,6 +118,9 @@
   line-height: 140%;
   color: $black;
   position: relative;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .contact__svg {
