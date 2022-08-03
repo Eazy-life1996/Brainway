@@ -2,6 +2,7 @@
   padding-top: 50px;
   padding-bottom: 96px;
   background-color: $bacground-grey;
+  position: relative;
 }
 
 .contact__title {
@@ -157,4 +158,209 @@
   margin-bottom: 30px;
   padding-right: 12%;
   padding-left: 12%;
+}
+
+.contact__map-link {
+  width: 100%;
+}
+
+.contact__decoration {
+  position: absolute;
+}
+.contact__decoration--1 {
+  left: 2%;
+  top: 3.5%;
+  width: 24px;
+  height: 24px;
+  transform: rotate(90deg);
+}
+
+.contact__decoration--2 {
+  right: 6%;
+  top: 41.5%;
+  width: 40px;
+  height: 21px;
+  transform: rotate(180deg);
+}
+
+.contact__decoration--3 {
+  left: 8%;
+  top: 95%;
+  opacity: 0.5;
+}
+
+.contact__red {
+  position: absolute;
+  @include circle-red;
+}
+
+.contact__circle-red--1 {
+  width: 15px;
+  height: 15px;
+  top: -0.5%;
+  left: 15%;
+}
+
+.contact__circle-red--2 {
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 5%;
+}
+
+.contact__circle-red--3 {
+  width: 10px;
+  height: 10px;
+  bottom: 3%;
+  right: 20%;
+}
+
+.contact__circle-blue {
+  position: absolute;
+  @include circle-blue;
+  top: 48%;
+  left: 9%;
+}
+
+.contact__circle-gold {
+  position: absolute;
+  @include circle-gold;
+  width: 19px;
+  height: 19px;
+  bottom: 1.5%;
+  right: 10%;
+}
+
+@media (min-width:$desktop-width) {
+  .contact {
+    padding-top: 119px;
+    padding-bottom: 119px;
+    padding-left: 13.4%;
+    padding-right: 13.4%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact__form {
+    margin: 0;
+  }
+
+  .contact__input {
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    font-size: 16px;
+  }
+
+  .contact__button {
+    font-weight: 900;
+    font-size: 25px;
+  }
+
+  .contact__p {
+    font-size: 15px;
+  }
+
+  .contact__title {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .contact__block {
+    width: 47.5%;
+  }
+
+  .contact__maps {
+    width: 48.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .contact__title-black {
+    width: 100%;
+    margin-bottom: 50px;
+    height: min-content;
+    font-size: 40px;
+  }
+
+  .contact__map-block {
+    width: 48.5%;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 30px;
+  }
+
+  .contact__country {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+
+  .contact__addres {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .contact__tel {
+    font-size: 18px;
+  }
+
+  .contact__svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact__map-map {
+    height: 300px;
+  }
+
+  .contact__map {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .contact__decoration--1 {
+    top: 15%;
+    left: 6%;
+  }
+
+  .contact__decoration--2 {
+    right: 49%;
+    top: 90%; 
+  }
+
+  .contact__decoration--3 {
+    left: 88%;
+    top: 22%;
+    width: 120px;
+    height: 53px;
+  }
+  
+  .contact__circle-red--1 {
+    width: 32px;
+    height: 32px;
+    top: 5%;
+    left: 15%;
+  }
+
+  .contact__circle-red--2 {
+    width: 12px;
+    height: 12px;
+    top: 18%;
+    left: 93%;
+  }
+
+  .contact__circle-red--3 {
+    bottom: 5%;
+    width: 15px;
+    height: 15px;
+  }
+
+  .contact__circle-gold {
+    width: 32px;
+    height: 32px;
+    bottom: 15%;
+    right: 5%;
+  }
 }
