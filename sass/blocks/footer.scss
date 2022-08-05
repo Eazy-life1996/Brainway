@@ -1,0 +1,201 @@
+.footer {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 26px;
+  padding-bottom: 15px;
+  background-color: $black;
+  position: relative;
+}
+
+.footer__list {
+  margin-top: 49px;
+  margin-bottom: 40px;
+}
+
+.footer__item {
+  margin-bottom: 31px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer__link {
+  color: $white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  width: 70%;
+  padding-right: 20px;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.footer__email {
+  color: $white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.footer__title {
+  color: $white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 120%;
+  padding-right: 25%;
+}
+
+.footer__block--2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer__p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  margin-top: 15px;
+  padding-right: 20%;
+  background: linear-gradient(90deg, #4BA8FE 0.01%, #2575FC 47.4%, #0354DC 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer__privacy,
+.footer__p-second {
+  color: $white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer__privacy {
+  text-decoration: underline;
+  margin-bottom: 19px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.footer__block--4 {
+  position: absolute;
+  right: 20px;
+  top: 18.5%;
+}
+
+.footer__social {
+  margin-bottom: 20px;
+  width: min-content;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .footer {
+    padding-right: 13.4%;
+    padding-left: 13.4%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+
+  .footer__block--1 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .footer__list {
+    margin-top: 29px;
+    margin-bottom: 30px;
+  }
+
+  .footer__logo {
+    width: 217px;
+  }
+
+  .footer__item {
+    margin-bottom: 20px;
+  }
+
+  .footer__link {
+    text-align: right;
+    padding-right: 0;
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .footer__block {
+    width: 50%;
+  }
+
+  .footer__email {
+    width: 15%;
+    font-size: 18px;
+    order: 3;
+  }
+
+  .footer__block--2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .footer__title {
+    font-weight: 700;
+    font-size: 55px;
+  }
+
+  .footer__p {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+
+  .footer__block--3 {
+    display: flex;
+    justify-content: end;
+    align-content: center;
+  }
+
+  .footer__privacy {
+    order: 2;
+    margin-left: 20px;
+  }
+
+  .footer__block--4 {
+    display: flex;
+    right: 64%;
+    top: 78.5%;
+    width: 10%;
+  }
+
+  .footer__social {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
