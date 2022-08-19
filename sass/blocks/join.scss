@@ -1,6 +1,8 @@
 .join {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 50px;
+  position: relative;
 }
 
 .join__title {
@@ -40,6 +42,41 @@
   margin-top: 25px;
 }
 
+.join__decoration {
+  position: absolute;
+}
+
+.join__decoration--1 {
+  top: 0;
+  left: 60%;
+  width: 19px;
+  height: 19px;
+}
+
+.join__decoration--2 {
+  bottom: 0;
+  right: 5%;
+  height: 100px;
+}
+
+.join__decoration--3 {
+  top: 53%;
+  left: 28%;
+  width: 17px;
+  height: 17px;
+}
+
+.join__decoration--4 {
+  top: 2%;
+  left: 15%;
+  opacity: 0.6;
+}
+
+.join__decoration--5 {
+  top: 65%;
+  left: 12%;
+}
+
 @media (min-width:$desktop-width) {
   .join {
     padding-left: 13.4%;
@@ -65,5 +102,34 @@
 
   .joim__img {
     width: 65%;
+  }
+
+  .join__decoration--1 {
+    width: 50px;
+    height: 50px;
+    left: 28%;
+    top: 5%;
+  }
+
+  .join__decoration--2 {
+    height: 300px;
+    right: 12%;
+  }
+
+  .join__decoration--3 {
+    top: 13%;
+    left: 36%;
+  }
+
+  .join__decoration--4 {
+    height: 40px;
+    left: 10%;
+    top: 15%;
+  }
+
+  .join__decoration--5 {
+    top: 75%;
+    left: 16%;
+    height: 60px;
   }
 }
