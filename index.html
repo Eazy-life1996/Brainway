@@ -41,7 +41,7 @@
           <a href="whyus.html" class="header__link">Why us</a>
         </li>
       </ul>
-      <button class="header__button-modal">
+      <button class="header__button-modal" data-modal>
         Contact us
       </button>
       <ul class="header__list-second">
@@ -197,7 +197,7 @@
             your
             product out in the real world. We are here to help with that!
           </p>
-          <button class="goal__button">
+          <button class="goal__button" data-modal>
             Get Free
           </button>
           <div class="goal__line"></div>
@@ -215,7 +215,7 @@
             build the exact product per your specifications, budget, and timeline in order to get you up and running as
             efficiently as possible.
           </p>
-          <button class="goal__button">
+          <button class="goal__button" data-modal>
             Get Free
           </button>
           <div class="goal__line"></div>
@@ -235,7 +235,7 @@
             approach is chosen, we will lead you into a shiny new system that is ready for reimplementation in the
             market.
           </p>
-          <button class="goal__button">
+          <button class="goal__button" data-modal>
             Get Free
           </button>
           <div class="goal__line"></div>
@@ -254,7 +254,7 @@
             is brought
             to life according to the highest industry standards.
           </p>
-          <button class="goal__button">
+          <button class="goal__button" data-modal>
             Get Free
           </button>
           <div class="goal__line"></div>
@@ -272,7 +272,7 @@
             everything back on track! Our team will analyze the situation and find the most effective and efficient
             solutions based on your particular needs so your product can be ready to launch as quickly as possible.
           </p>
-          <button class="goal__button">
+          <button class="goal__button" data-modal>
             Get Free
           </button>
           <div class="goal__line goal__line--nomargin goal__line--desktop"></div>
@@ -567,10 +567,36 @@
       </a>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal__block">
+      <button class="modal__close" data-modal-close>
+        <img src="img/svg/button-close.svg" alt="Button for closing" class="modal__svg">
+      </button>
+      <h2 class="modal__title">
+        <span class="modal__decor">Free</span> consultation
+      </h2>
+      <p class="modal__p">
+        Stop thinking of something when you can have it! Contact us now and bring your idea to life.
+      </p>
+      <form action="#" method="post" class="modal__form">
+        <input type="text" name="name" class="modal__input" placeholder="Name" required>
+        <input type="email" name="email" class="modal__input" placeholder="Email" required>
+        <input type="tel" name="phone" class="modal__input" placeholder="Phone">
+        <textarea class="modal__message" name="message" placeholder="Whats on your mind?" cols="30" rows="6"></textarea>
+        <p class="modal__description">
+          By clicking on the button, You agree with <a href="#" class="modal__policy">Privacy Policy</a>
+        </p>
+        <button class="modal__button" type="submit">
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/slider-settings.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>

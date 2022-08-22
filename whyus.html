@@ -41,7 +41,7 @@
           <a href="#" class="header__link header__link--active">Why us</a>
         </li>
       </ul>
-      <button class="header__button-modal">
+      <button class="header__button-modal" data-modal>
         Contact us
       </button>
       <ul class="header__list-second">
@@ -321,7 +321,33 @@
       </a>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal__block">
+      <button class="modal__close" data-modal-close>
+        <img src="img/svg/button-close.svg" alt="Button for closing" class="modal__svg">
+      </button>
+      <h2 class="modal__title">
+        <span class="modal__decor">Free</span> consultation
+      </h2>
+      <p class="modal__p">
+        Stop thinking of something when you can have it! Contact us now and bring your idea to life.
+      </p>
+      <form action="#" method="post" class="modal__form">
+        <input type="text" name="name" class="modal__input" placeholder="Name" required>
+        <input type="email" name="email" class="modal__input" placeholder="Email" required>
+        <input type="tel" name="phone" class="modal__input" placeholder="Phone">
+        <textarea class="modal__message" name="message" placeholder="Whats on your mind?" cols="30" rows="6"></textarea>
+        <p class="modal__description">
+          By clicking on the button, You agree with <a href="#" class="modal__policy">Privacy Policy</a>
+        </p>
+        <button class="modal__button" type="submit">
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
   <script src="js/script.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,140 @@
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($black, 0.3);
+  position: absolute;
+  top: 0;
+  z-index: 50;
+}
+
+.modal--open {
+  display: block;
+}
+
+.modal__block {
+  padding: 15px;
+  background-color: $bacground-grey;
+  border-radius: 3px;
+  width: 87.5%;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+}
+
+.modal__close {
+  position: absolute;
+  right: 3.5%;
+  top: 1.8%;
+}
+
+.modal__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.modal__decor {
+  color: $purple;
+}
+
+.modal__p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.modal__form {
+  margin-top: 20px;
+}
+
+.modal__input,
+.modal__message {
+  width: 100%;
+  margin-bottom: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 3px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.modal__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 107.9%;
+  letter-spacing: 0.03em;
+}
+
+.modal__policy {
+  color: $black;
+  text-decoration: underline;
+  display: inline;
+}
+
+.modal__button {
+  @extend %button;
+  width: 100%;
+  border-radius: 4px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 15px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+@media (min-width:$desktop-width) {
+  .modal__block {
+    width: 32%;
+    left: calc(50% - 256px);
+    top: 15%;
+    padding-top: 45px;
+    padding-bottom: 35px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .modal__close {
+    right: 4.5%;
+    top: 4%;
+  }
+
+  .modal__svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .modal__p {
+    font-size: 14px;
+  }
+
+  .modal__input,
+  .modal__message {
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+
+  .modal__button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+}
