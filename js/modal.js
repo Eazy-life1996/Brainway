@@ -14,9 +14,9 @@
     document.body.style.overflow = '';
   };
 
-  const timerForModal = setTimeout(() => {
-    openModal();
-  }, 7000);
+  // const timerForModal = setTimeout(() => {
+  //   openModal();
+  // }, 7000);
 
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -40,6 +40,7 @@
       closeModal();
     }
   });
+
   // GET/PUT 
 
   const form = document.querySelector('.modal__form');
@@ -71,7 +72,7 @@
       evt.preventDefault();
 
       const statusMessage = document.createElement('div');
-      statusMessage.classList.add('status');
+      statusMessage.classList.add('status'); // ???
       statusMessage.textContent = messages.load;
       form.append(statusMessage);
 
