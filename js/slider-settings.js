@@ -9,7 +9,7 @@ $(document).ready(function () {
     responsive: [{
       breakpoint: 1100,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 1,
         centerMode: true,
         variableWidth: true,
         slidesToScroll: 1,
@@ -37,5 +37,15 @@ $(document).ready(function () {
         cssEase: 'ease',
       }
     }]
+  });
+});
+$(document).ready(function () {
+  $('.comments__slider-big').slick({
+    slidesToShow: 1,
+    centerMode: false,
+    slidesToScroll: 1,
+    arrows: true,
+    cssEase: 'ease',
+    infinite: false
   });
 });
