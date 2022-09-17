@@ -72,7 +72,6 @@
       evt.preventDefault();
 
       const statusMessage = document.createElement('div');
-      statusMessage.classList.add('status'); // ???
       statusMessage.textContent = messages.load;
       form.append(statusMessage);
 

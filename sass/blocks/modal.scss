@@ -95,23 +95,28 @@
 
 @media (min-width:$desktop-width) {
   .modal__block {
-    width: 32%;
-    left: calc(50% - 256px);
+    width: 507px;
+    left: calc(50% - 295px);
     padding-top: 45px;
     padding-bottom: 35px;
-    padding-left: 4%;
-    padding-right: 4%;
-    top: 120px;
+    padding-left: 3%;
+    padding-right: 3%;
+    top: 80px;
+    border-radius: 15px;
   }
 
   .modal__close {
-    right: 4.5%;
-    top: 4%;
+    right: 4.8%;
+    top: 27px;
+  }
+
+  .modal__dialog .modal__close {
+    top: 12%;
   }
 
   .modal__svg {
     width: 20px;
-    height: 20px;
+    height: 20px;  
   }
 
   .modal__title {
