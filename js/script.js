@@ -124,3 +124,22 @@ window.addEventListener('DOMContentLoaded', () => {
 
   addworkersCard();
 });
+
+// Comments 
+
+const coment = document.querySelector('[data-coment]');
+const btnComents = document.querySelector('[data-buttonComents]');
+let comCut = coment.textContent;
+
+let commentCut = function() {
+  coment.innerHTML = '';
+  comCut = `${comCut.substring(0, 213)}...`;
+  coment.append(comCut);
+  btnComents.addEventListener('click', () => {
+    coment.remove(comCut);
+    coment.innerHTML = coment;
+  });
+};
+
+commentCut();
+

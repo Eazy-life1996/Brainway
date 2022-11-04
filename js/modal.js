@@ -14,9 +14,9 @@
     document.body.style.overflow = '';
   };
 
-  // const timerForModal = setTimeout(() => {
-  //   openModal();
-  // }, 7000);
+  const timerForModal = setTimeout(() => {
+    openModal();
+  }, 7000);
 
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
